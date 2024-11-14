@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Información </title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-image: url('C:/Users/nelso/OneDrive/Escritorio/Aprendiendo HTML/Balmain-3-05092023.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+
+        /* Título */
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            margin-bottom: 30px;
+            font-size: 2.5rem;
+        }
+
+        /* Estilos de la tabla */
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semi-transparente */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            font-size: 1rem;
+        }
+
+        /* Encabezado de la tabla */
+        th {
+            background-color: #062e5b; /* Verde */
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Celdas de datos */
+        td {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Cambio de color al pasar el mouse sobre las celdas */
+        td:hover, th:hover {
+            background-color: #f04d2d;
+        }
+
+        /* Agregar imágenes a las celdas */
+        .profile-pic {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        /* Celdas de comentarios */
+        td:last-child {
+            font-style: italic;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Tabla de Información </h1>
+
+    <table>
+        <!-- Fila de encabezado -->
+        <tr>
+            <th rowspan="2">Foto</th> <!-- Foto abarca dos filas -->
+            <th colspan="2">Información Personal</th> <!-- Colspan: se extiende a dos columnas -->
+            <th rowspan="2">Comentarios</th> <!-- Comentarios abarca dos filas -->
+        </tr>
+        <tr>
+            <th>Nombre</th>
+            <th>Edad</th>
+        </tr>
+
+        <!-- Filas de datos -->
+        <tr>
+            <td><img src="c:\Users\nelso\OneDrive\Escritorio\Aprendiendo HTML\50ec99ac9df3e62470623b25a4c9b360_2989.jpg" alt="Foto de Juan Pérez" class="profile-pic"></td>
+            <td>Juan Pérez</td>
+            <td>30</td>
+            <td>Fotógrafo de editoriales</td>
+        </tr>
+        <tr>
+            <td><img src="c:\Users\nelso\OneDrive\Escritorio\Aprendiendo HTML\2310936-800w.jpg" alt="Foto de Ana López" class="profile-pic"></td>
+            <td>Ana López</td>
+            <td>28</td>
+            <td>Diseñadora de interiores</td>
+        </tr>
+        <tr>
+            <td><img src="c:\Users\nelso\OneDrive\Escritorio\Aprendiendo HTML\artandcommerce_1728477356--462302169_18465494758063472_225711160621532975_n.jpg" alt="Foto de María González" class="profile-pic"></td>
+            <td>María González</td>
+            <td>25</td>
+            <td>Apasionada por el diseño gráfico y UX</td>
+        </tr>
+        <tr>
+            <td><img src="c:\Users\nelso\OneDrive\Escritorio\Aprendiendo HTML\Balmain-4-05092023.jpg" alt="Foto de Carlos Sánchez" class="profile-pic"></td>
+            <td>Carlos Sánchez</td>
+            <td>32</td>
+            <td>Entusiasta de la inteligencia artificial</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
